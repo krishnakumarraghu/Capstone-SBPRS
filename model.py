@@ -18,8 +18,9 @@ def getRecommendations(username):
         # limit of 20 added due to memeory issue
         _Top20Recproductdf = pd.DataFrame(UserRecommender.loc[username].sort_values(ascending=False)[0:20].index)
     except KeyError:
-        errorMessage = f'Hey Mate! we tried hard but couldn\'t find the user "{username}", so we couldn\'t recommend anything \n\
-         for "{username}", you can try again by select any of the below username to find their recommendations.'
+        errorMessage = f'OOPS! we weren\'t able to lookup "{username}", so we couldn\'t recommend anything \n\
+         If you thind this is an issue You can get the Ebuss Help Centre number or even access Ebuss Help Centre support if you need professional help regarding various topics. \n\
+         The support executive will ensure speedy assistance so that your shopping experience is positive and enjoyable, you can try again by select any of the below username to find their recommendations.'
         print(type(errorMessage))
         return errorMessage, None
     
