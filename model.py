@@ -19,8 +19,8 @@ def getRecommendations(username):
         _Top20Recproductdf = pd.DataFrame(UserRecommender.loc[username].sort_values(ascending=False)[0:20].index)
     except KeyError:
         errorMessage = f'OOPS! we weren\'t able to lookup "{username}", so we couldn\'t recommend anything \n\
-            If you think this is an issue, You can call the Ebuss Help Centre support and get professional help regarding various topics. \n\
-            ,you can try again by select any of the below username to find their recommendations.'
+            ....If you think this is an issue, You can call the Ebuss Help Centre support and get professional help regarding various topics. \n\
+            ....You can try again by selecting any of the below username to find their recommendations.'
         print(type(errorMessage))
         return errorMessage, None
     
