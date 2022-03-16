@@ -22,7 +22,7 @@ def recommend():
     productNameList, posSentimentRateList = model.getRecommendations(username)
 
     if  posSentimentRateList == None or type(productNameList) == 'str':
-        allUsername = model.recommendation_model.index.tolist()
+        allUsername = model.UserRecommender.index.tolist()
         return render_template('index.html', usernameList = allUsername, error = productNameList)
 
     productList = zip(productNameList, posSentimentRateList)
@@ -31,4 +31,4 @@ def recommend():
 
 if __name__ == '__main__':
     print('Sentiment Based Product Recommendation System')
-    app.run(debug = True)
+    app.run(debug = False)

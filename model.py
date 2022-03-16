@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 import pickle
+import compress_pickle as cp
 import os
 
 dirname = os.path.dirname(__file__)
@@ -8,7 +9,7 @@ dirname = os.path.dirname(__file__)
 UserRecommender_path = os.path.join(dirname, 'models', 'UserRecommendModel.pkl')
 fCleandf_path = os.path.join(dirname, 'models', 'fCleandf.pkl')
 
-UserRecommender = pickle.load(file = open(UserRecommender_path, 'rb'))
+UserRecommender = cp.load(open(UserRecommender_path, 'rb'),compression='gzip')
 fCleandf = pickle.load(file = open(fCleandf_path, 'rb'))
 
 
