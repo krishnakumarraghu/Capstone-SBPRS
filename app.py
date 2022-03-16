@@ -31,4 +31,4 @@ def recommend():
 
 if __name__ == '__main__':
     print('Sentiment Based Product Recommendation System')
-    app.run(debug = False)
+    app.run(debug = True)

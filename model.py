@@ -5,7 +5,7 @@ import os
 
 dirname = os.path.dirname(__file__)
 
-UserRecommender_path = os.path.join(dirname, 'models', 'UserRecommender.pkl')
+UserRecommender_path = os.path.join(dirname, 'models', 'UserRecommendModel.pkl')
 fCleandf_path = os.path.join(dirname, 'models', 'fCleandf.pkl')
 
 UserRecommender = pickle.load(file = open(UserRecommender_path, 'rb'))
