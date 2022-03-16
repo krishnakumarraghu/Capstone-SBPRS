@@ -1,6 +1,10 @@
 # Capstone-SBPS
 Project submitted as part of Upgrad's PGDAIML Course - Feb 2021
 
+![Python](https://img.shields.io/badge/Python-3.8-blueviolet)
+![Framework](https://img.shields.io/badge/Framework-Flask-red)
+![Frontend](https://img.shields.io/badge/Frontend-HTML/CSS/JS-green)
+
 # Sentiment Based Product Recommendation System
 
 ## Problem Statement:
