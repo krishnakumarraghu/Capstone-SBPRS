@@ -34,8 +34,9 @@ Our choice here would be to use TF-IDF vectorization
 * Multinomial Naive Bayes
 
 --------
-Our choice here would be to build Logistic Regression, Naive Bayes(Multinomial) and Random Forest models. We will then select the best performing models among these based on Recall. This best sentiment model will then be used for product recommendation.
+Our choice here would be to build Logistic Regression, Naive Bayes(Multinomial) and Random Forest models.
 --------
+ We will then select the best performing models among these based on Recall. This best sentiment model will then be used for product recommendation.
 
 *Rationale : Recall in the current context is the number of correct recommendations divided by the number of recommendations that should have been returned. Here, we would like to maximize Recall as this can translate to better conversion rates for our e-commerce company.*
 
